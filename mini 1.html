@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!-- Bootstrap JavaScript Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+  crossorigin="anonymous">
+  <!-- Bootstrap JavaScript Libraries -->
+
+<!-- fontawesome JavaScript Libraries -->
+  <script src="https://kit.fontawesome.com/b4c1a910a4.js" crossorigin="anonymous"></script>
+<!-- fontawesome JavaScript Libraries -->
+
+<!-- style -->
+<style>
+.navbar {
+  background-color: #263A29;
+}
+
+.navbar-brand {
+  color: #13d758 !important; 
+  font-family:'CustomFont', sans-serif;
+  font-size: 28px;
+  text-shadow:1px 1px 2px #a88735;
+}
+
+.nav-link {
+  color: aliceblue !important;
+  font-family:'CustomFont2', sans-serif;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.nav-link:hover,.footer-menu a:hover, .social i:hover {
+  color: #16FF00 !important;
+}
+
+.dropdown-item:hover{
+  color: #AAC8A7 !important;
+}
+.navbar-toggler-icon {
+  background-color: #E3F2C1 !important;
+}
+
+body, html {
+  height: 100%;
+
+}
+
+body {
+  background-color: #E3F2C1;
+    
+}
+
+.hero-image {
+  background-image: url("Untitled\ design.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #13d758;
+  text-shadow:2px 2px 2px black,0 0 20px #f1c24f, 0 0 25px #a88735;
+}
+
+.hero-text h1 {
+  font-family:'CustomFont',sans-serif;
+  font-weight: bolder;
+  font-size: 90px !important;
+}
+
+.hero-text p {
+  font-family:'CustomFont1', sans-serif;
+  font-weight:lighter;
+  font-size: 40px !important;
+}
+
+.card-body h5, .dropdown-item {
+  font-family:'CustomFont2', sans-serif; 
+}
+.card-body p, #submit{
+  font-family:'CustomFont', sans-serif; 
+}
+
+#services, #contact-me, #contact p, .service p{
+  font-family: 'CustomFont1', sans-serif;
+}
+
+#contact p, .service p{
+  font-size: 25px !important;
+}
+
+.service {
+  padding: 50px;
+}
+#contact {
+  padding: 200px;
+}
+
+textarea {
+  height: 400px;
+}
+
+@font-face {
+font-family: 'CustomFont';
+src: url(BRLNSDB.TTF) format('woff2');
+}
+
+@font-face {
+font-family: 'CustomFont1';
+src: url(Homework\ Signature.ttf) format('woff2');
+font-stretch: 150%;
+}
+
+@font-face {
+font-family: 'CustomFont2';
+src: url(Little\ Cupcakes.ttf) format('woff2');
+font-stretch: 150%;
+}
+
+@media(max-width:700px){
+  .contact-class{
+    width: 100% !important;
+  }
+}
+
+#carouselExample {
+  padding-top: 0;
+  padding-left: 430px !important;
+  padding-right: 200px !important;
+  background-color: #AAC8A7;
+}
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  bottom: 0;
+  width: 100vw;
+  font-size: 16px;
+}
+
+.foot-subj {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+div.social {
+  display: flex;
+  justify-content:center;
+  font-size: 20px;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social li {
+  color: aliceblue;
+  list-style: none;
+}
+
+.footer-menu{
+  float: left;
+  margin:auto;
+}
+.footer-menu a{
+  color: aliceblue;
+  padding: 3px;
+  text-decoration: none;
+}
+.copyright {
+  padding:2px;
+  background-color: #25262e;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+  padding-right: 50px;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+<!-- style -->
+  
+<!-- Title name and icon -->
+  <link rel="icon" href="Printing_Shop.png" type="image/icon type">
+  <title>Olivine' Printing Services</title>
+<!-- Title name and icon -->
+
+</head>
+<body>
+<!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#home">
+          <img src="Printing_Shop.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+          Olivine' Printing Services
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav ms-auto nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-uppercase" href="#service1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-uppercase" href="#print">Photo/Document Printing</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#laminate">Laminate</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#sintra">Photo Sintra</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#xerox">Photocopy</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#scan">Scan</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#sticker">Stickers</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#business-card">Business Cards</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#mugs">Mug Printing</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#invitation">Invitations</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#ref-magnet">Ref Magnets</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#bag-tag">PVC ID/Bag tags</a></li>
+                <li><a class="dropdown-item text-uppercase" href="#tshirt-press">Tshirt Printing</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#contact" style="color: aliceblue;">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- Navbar -->
+
+<!--Banner-->
+ 
+    <div class="hero-image" id="home">
+      <div class="hero-text">
+        <h1>Olivine' Printing Services</h1>
+        <p>Your one-stop print shop that bring your designs to life!</p>
+      </div>
+    </div>
+
+<!--Banner-->
+
+<!--Services-->
+  <section>
+    <div class="container-fluid" >
+      <div id="service1">
+        <div class="container text-center service" id="service" >
+          <h3 class="display-2" id="services">Services</h3>
+          <p>Quality prints, every time!</p>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner m-5">
+            <div class="carousel-item active">
+              <img src="Stickers.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="tshirt printing.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="refmagnet.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pvcid.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="photo sintra.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="mug printing.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="invitation.jpg" class="d-block w-30" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="calling card.jpg" class="d-block w-30" alt="...">
+            </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>  
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" id="print">
+          <div class="card">
+            <img src="photoPrint.png" class="card-img-top" alt="print">
+            <div class="card-body" >
+              <h5 class="card-title">Photo/Document Printing</h5>
+              <p class="card-text">Printing services that specialize in printing high-quality images and documents on various types of paper or other materials, such as canvas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="laminate">
+          <div class="card">
+            <img src="laminate.jpg" class="card-img-top" alt="laminate">
+            <div class="card-body">
+              <h5 class="card-title">Laminate</h5>
+              <p class="card-text">A process of sealing a document or photo between two layers of plastic film to protect it from wear and tear, moisture, and other environmental factors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="sintra">
+          <div class="card">
+            <img src="photo sintra.jpg" class="card-img-top" alt="sintra">
+            <div class="card-body" >
+              <h5 class="card-title">Photo Sintra</h5>
+              <p class="card-text">A type of photo printing that involves printing high-quality images onto a durable, lightweight material called Sintra board, which is made of PVC plastic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="xerox">
+          <div class="card">
+            <img src="photocopy.jpg" class="card-img-top" alt="xerox">
+            <div class="card-body" >
+              <h5 class="card-title">Photocopy</h5>
+              <p class="card-text">A process of reproducing multiple copies of a document or image by using a photocopier machine.</p>
+            </div>
+          </div> 
+        </div>
+        <div class="col" id="scan">
+          <div class="card">
+            <img src="scan.png" class="card-img-top" alt="scan">
+            <div class="card-body">
+              <h5 class="card-title">Scan</h5>
+              <p class="card-text">The process of converting a physical document into a digital format by using a scanner or a smartphone camera.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="sticker">
+          <div class="card">
+            <img src="Stickers.jpg" class="card-img-top" alt="sticker">
+            <div class="card-body">
+              <h5 class="card-title">Stickers</h5>
+              <p class="card-text">The process of printing customized stickers on a variety of materials, such as vinyl, paper, or transparent film.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="business-card">
+          <div class="card">
+            <img src="calling card.jpg" class="card-img-top" alt="business card">
+            <div class="card-body" >
+              <h5 class="card-title">Business Cards</h5>
+              <p class="card-text">A small card that displays the contact information of an individual or a company, typically used for networking or promotional purposes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="mugs">
+          <div class="card">
+            <img src="mug printing.jpg" class="card-img-top" alt="mugs">
+            <div class="card-body" >
+              <h5 class="card-title">Mug Printing</h5>
+              <p class="card-text">The process of printing customized images or text onto a coffee mug or other types of drinkware.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="invitation">
+          <div class="card">
+            <img src="invitation.jpg" class="card-img-top" alt="invitation">
+            <div class="card-body" >
+              <h5 class="card-title">Invitations</h5>
+              <p class="card-text">A type of card that is designed to invite people to an event, such as a wedding, birthday party, or corporate event.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="ref-magnet">
+          <div class="card">
+            <img src="refmagnet.jpg" class="card-img-top" alt="ref magnet">
+            <div class="card-body" >
+              <h5 class="card-title">Ref Magnets</h5>
+              <p class="card-text"> A type of promotional item that involves printing customized images or text on magnets that can be attached to a refrigerator or other metal surfaces.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="bag-tag">
+          <div class="card">
+            <img src="pvcid.jpg" class="card-img-top" alt="bag tag">
+            <div class="card-body" >
+              <h5 class="card-title">PVC ID/Bag Tags</h5>
+              <p class="card-text">A type of personalized identification card or bag tag that is made of durable PVC plastic and can be customized with various designs, images, and text.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="tshirt-press">
+          <div class="card">
+            <img src="tshirt printing.jpg" class="card-img-top" alt="tshirt press">
+            <div class="card-body" >
+              <h5 class="card-title">Tshirt Printing</h5>
+              <p class="card-text">The process of printing customized images or text onto a t-shirt or other types of apparel using various printing methods, such as screen printing, digital printing, or heat transfer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Services-->
+
+<!--Contact Us-->
+  <section>
+    <form action="mailto:olivine722@gmail.com" method="post" enctype="text/plain" id="contact">
+      <div class="container-fluid">
+        <div class="container text-center">
+          <h3 class="display-5" id="contact-me">Contact Me</h3>
+          <p>If you have any concerns and questions, please free to message us..</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <div class="w-50 mx-auto contact-class">
+              <div class="row g-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Full name" aria-label="First name" required>
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email Address" aria-label="Email" required>
+                </div>
+              <div class="row g-1">
+                <div class="col">
+                  <textarea class="form-control" placeholder="Your message"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-2 g-2 mx-auto">
+          <button class="button" type="submit" id="submit">Submit Form</button>
+        </div>
+      </div>
+    </form>
+  </section>
+<!--Contact Us-->
+<!--Footer-->
+  <footer>
+    <div class="row footer">
+      <div class="col about">
+        <h3 class="foot-subj">About Us</h3>
+        <p>"Olivine Printing Services offers a wide range of high-quality printing services to meet all your needs, from personalized mugs to professional documents. Let us help you make a lasting impression today."</p>
+      </div>
+      <div class="col connected">
+        <h3 class="foot-subj">Keep Connected</h3>
+        <div class="social">
+          <ul>
+            <li><i class="fa-brands fa-square-facebook"></i> Facebook</li>
+            <li><i class="fa-brands fa-facebook-messenger"></i> Messenger</li>
+            <li><i class="fa-brands fa-viber"></i> Viber</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <h3 class="foot-subj">Contact Information</h3>
+        <div class="info">
+          <i class="fa-solid fa-store"> 1323 Brgy. Del Remedio,<br>San Pablo City, Laguna</i>
+          <i class="fa-solid fa-mobile-screen-button"> +639959645303<br>+639421726490</i>
+          <i class="fa-solid fa-envelope"> olivine722@gmail.com</i>
+        </div>
+      </div>
+    </div>
+    <div class="row copyright">
+      <div class="footer-menu">
+        <a href="#home">Home</a>
+        <a href="">F.A.Q</a>
+        <a href="">Cookies Policy</a>
+        <a href="">Terms Of Service</a>
+        <a href="">Support</a>
+      </div>
+       <p>Copyright &copy; 2022</p>
+    </div>
+  </footer>
+<!--Footer-->
+</body>   
+<!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+  integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+  crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
+  integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" 
+  crossorigin="anonymous">
+  </script>
+<!-- Bootstrap JavaScript Libraries -->
+</html>
